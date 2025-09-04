@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace ProjetoPizzariaCidade
 {
@@ -158,8 +159,34 @@ namespace ProjetoPizzariaCidade
                 MessageBox.Show("Campo Obrigatorio");
                 txtValorCarro.Focus();
             }
-            else if (txtValorAcessorios == "") 
-            {  
+            else if (txtValorAcessorios.Text == "")
+            {
+                MessageBox.Show("Campo Obrigatorio");
+                txtValorAcessorios.Focus();
+            }
+            else if (txtValorPagar.Text == "")
+            {
+                MessageBox.Show("Campo Obrigatorio");
+                txtValorPagar.Focus();
+            }
+            else
+            {
+                //inserindo dados no banco de dados
+                string sql = "insert into tbPedido(tipoCarro,valorCarro,valorAcessorios,valorTotal) values(@carro,@vcarro,@vacessorios,@total)";
+                MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
+                cmd.Parameters.Add("@carro", MySqlDbType.Text).Value = cmbCarros.Text;
+                cmd.Parameters.Add("@vcarro", MySqlDbType.Text).Value = txtValorCarro.Text;
+                cmd.Parameters.Add("@vacessorios", MySqlDbType.Text).Value = txtValorAcessorios;
+                cmd.Parameters.Add("@total", MySqlDbType.Text).Value = txtValorPagar.Text;
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Dados cadstrados com sucesso");
+                cmbCarros.Text = "";
+                txtValorCarro.Text = "";
+                txtValorAcessorios.Text = "";
+                txtValorPagar.Text = "";
+                cmbCarros.Focus();
+                con.DesConnectarBD();
 
             }
         }
