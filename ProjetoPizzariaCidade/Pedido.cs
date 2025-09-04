@@ -28,5 +28,97 @@ namespace ProjetoPizzariaCidade
             cmbCarros.Items.Add("Ford Mustang EcoBoost — R$ 310.000");
             cmbCarros.Items.Add("Subaru BRZ — R$ 250.000");
         }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+            //DECLARANDO AS VARIAVEIS 
+            Double valorCarro = 0, valorAcessorios = 0, valorTotal = 0;
+
+            if (cmbCarros.SelectedIndex == 0)
+            {
+                valorCarro = 158490;
+            }
+            else if (cmbCarros.SelectedIndex == 1)
+            {
+                valorCarro = 140000;
+            }
+            else if (cmbCarros.SelectedIndex == 2)
+            {
+                valorCarro = 247290;
+            }
+            else if (cmbCarros.SelectedIndex == 3)
+            {
+                valorCarro = 429990;
+            }
+            else if (cmbCarros.SelectedIndex == 4)
+            {
+                valorCarro = 98990;
+            }
+            else if (cmbCarros.SelectedIndex == 5)
+            {
+                valorCarro = 101490;
+            }
+            else if (cmbCarros.SelectedIndex == 6)
+            {
+                valorCarro = 105890;
+            }
+            else if (cmbCarros.SelectedIndex == 7)
+            {
+                valorCarro = 112690;
+            }
+            else if (cmbCarros.SelectedIndex == 8)
+            {
+                valorCarro = 220000;
+            }
+            else if (cmbCarros.SelectedIndex == 9)
+            {
+                valorCarro = 390000;
+            }
+            else if (cmbCarros.SelectedIndex == 10)
+            {
+                valorCarro = 310000;
+            }
+            else if (cmbCarros.SelectedIndex == 11)
+            {
+                valorCarro = 250000;
+            }
+            else
+            {
+            }
+            if (chkCamera.Checked == true)
+            {
+                valorAcessorios = valorAcessorios + 89.90;
+            }
+            if(chkSensor.Checked == true)
+            {
+                valorAcessorios = valorAcessorios + 45.00;
+            }
+            if (chkCarregador.Checked == true)
+            {
+                valorAcessorios = valorAcessorios + 16.86;
+            }
+            if(chkTapete.Checked == true)
+            {
+                valorAcessorios = valorAcessorios + 113.40;
+            }
+            if (chkCapa.Checked == true)
+            {
+                valorAcessorios = valorAcessorios + 120.00;
+            }
+            if (chkPortaMalas.Checked == true)
+            {
+                valorAcessorios = valorAcessorios + 41.78;
+            }
+            else { 
+            }
+            valorTotal = valorCarro + valorAcessorios;
+            txtValorCarro.Text = Convert.ToString(valorCarro);
+            txtValorAcessorios.Text = Convert.ToString(valorAcessorios);
+            txtValorPagar.Text = Convert.ToString(valorTotal);
+        }
+
+        private void grpOpicionais_Enter(object sender, EventArgs e)
+        {
+        }
     }
 }
