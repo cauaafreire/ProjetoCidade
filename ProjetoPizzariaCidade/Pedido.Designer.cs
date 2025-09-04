@@ -212,6 +212,7 @@
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(117, 20);
             this.txtPesquisar.TabIndex = 15;
+            this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged);
             // 
             // chkSensor
             // 

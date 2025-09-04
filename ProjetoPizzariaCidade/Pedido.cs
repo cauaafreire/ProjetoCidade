@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Data;
 using System.Windows.Forms;
 using MySql.Data.MySqlClient;
 
@@ -230,11 +231,42 @@ namespace ProjetoPizzariaCidade
                 cmbCarros.Text = dgvPedido.SelectedRows[0].Cells[1].Value.ToString();
                 txtValorCarro.Text = dgvPedido.SelectedRows[0].Cells[2].Value.ToString();
                 txtValorAcessorios.Text = dgvPedido.SelectedRows[0].Cells[3].Value.ToString();
-                txtValorPagar.Text = dgvPedido.SelectedRows[0].Cells[4].Value.ToString();   
+                txtValorPagar.Text = dgvPedido.SelectedRows[0].Cells[4].Value.ToString();
             }
-            catch (Exception erro) 
+            catch (Exception erro)
             {
                 MessageBox.Show("Erro ao clicar" + erro);
             }
+        }
+
+        private void txtPesquisar_TextChanged(object sender, EventArgs e)
+        {
+            if (txtPesquisar.Text != "")
+            {
+                try
+                {
+                    con.ConnectarBD();
+                    MySqlCommand cmd = new MySqlCommand();
+                    cmd.CommandText = "select * from tbPedido";
+
+                    cmd.Connection = con.ConnectarBD();
+                    MySqlDataAdapter da = new MySqlDataAdapter(cmd);    
+                    DataTable dt = new DataTable();
+                    da.SelectCommand = cmd;
+                    da.Fill(dt);
+                    dgvPedido.DataSource = dt;
+                    con.DesConnectarBD();
+                }
+                catch (Exception erro)
+                {
+                    MessageBox.Show(erro.Message);
+                }
+            }
+            else
+            {
+                // deixa o data grid limp
+                dgvPedido.DataSource = null;
+            }
+        }
     }
 }
