@@ -118,7 +118,7 @@ namespace ProjetoPizzariaCidade
             valorTotal = valorCarro + valorAcessorios;
             txtValorCarro.Text = Convert.ToString(valorCarro);
             txtValorAcessorios.Text = Convert.ToString(valorAcessorios);
-            txtValorPagar.Text = Convert.ToString(valorTotal);
+            txt.Text = Convert.ToString(valorTotal);
         }
 
         private void grpOpicionais_Enter(object sender, EventArgs e)
@@ -140,7 +140,7 @@ namespace ProjetoPizzariaCidade
 
             txtValorCarro.Clear();
             txtValorAcessorios.Clear();
-            txtValorPagar.Clear();
+            txt.Clear();
 
             txtPesquisar.Clear();
 
@@ -165,10 +165,10 @@ namespace ProjetoPizzariaCidade
                 MessageBox.Show("Campo Obrigatorio");
                 txtValorAcessorios.Focus();
             }
-            else if (txtValorPagar.Text == "")
+            else if (txt.Text == "")
             {
                 MessageBox.Show("Campo Obrigatorio");
-                txtValorPagar.Focus();
+                txt.Focus();
             }
             else
             {
@@ -178,14 +178,14 @@ namespace ProjetoPizzariaCidade
                 cmd.Parameters.Add("@carro", MySqlDbType.Text).Value = cmbCarros.Text;
                 cmd.Parameters.Add("@vcarro", MySqlDbType.Text).Value = txtValorCarro.Text;
                 cmd.Parameters.Add("@vacessorios", MySqlDbType.Text).Value = txtValorAcessorios;
-                cmd.Parameters.Add("@total", MySqlDbType.Text).Value = txtValorPagar.Text;
+                cmd.Parameters.Add("@total", MySqlDbType.Text).Value = txt.Text;
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Dados cadstrados com sucesso");
                 cmbCarros.Text = "";
                 txtValorCarro.Text = "";
                 txtValorAcessorios.Text = "";
-                txtValorPagar.Text = "";
+                txt.Text = "";
                 cmbCarros.Focus();
                 con.DesConnectarBD();
 
@@ -231,7 +231,7 @@ namespace ProjetoPizzariaCidade
                 cmbCarros.Text = dgvPedido.SelectedRows[0].Cells[1].Value.ToString();
                 txtValorCarro.Text = dgvPedido.SelectedRows[0].Cells[2].Value.ToString();
                 txtValorAcessorios.Text = dgvPedido.SelectedRows[0].Cells[3].Value.ToString();
-                txtValorPagar.Text = dgvPedido.SelectedRows[0].Cells[4].Value.ToString();
+                txt.Text = dgvPedido.SelectedRows[0].Cells[4].Value.ToString();
             }
             catch (Exception erro)
             {
@@ -267,6 +267,22 @@ namespace ProjetoPizzariaCidade
                 // deixa o data grid limp
                 dgvPedido.DataSource = null;
             }
+        }
+
+        private void btnSair_Click(object sender, EventArgs e)
+        {
+            DialogResult sair = MessageBox.Show("desseja sair?", "sair ", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (sair == DialogResult.No)
+            {
+                Pedido ped = new Pedido();
+                ped.Show();
+                this.Hide();
+            }
+            else
+            {
+                Application.Exit();
+            }
+
         }
     }
 }

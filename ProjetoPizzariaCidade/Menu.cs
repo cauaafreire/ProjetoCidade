@@ -16,5 +16,17 @@ namespace ProjetoPizzariaCidade
         {
             InitializeComponent();
         }
+
+        private void fazerPedidoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Pedido ped = new Pedido ();
+            ped.Show();
+            this.Hide();
+        }
+
+        private void visualizarCarrosToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
