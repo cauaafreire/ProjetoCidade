@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Pedido));
             this.btnNovo = new System.Windows.Forms.Button();
             this.cmbCarros = new System.Windows.Forms.ComboBox();
             this.lblValorCarro = new System.Windows.Forms.Label();
@@ -58,7 +59,7 @@
             // btnNovo
             // 
             this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovo.Location = new System.Drawing.Point(1078, 639);
+            this.btnNovo.Location = new System.Drawing.Point(997, 621);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(106, 46);
             this.btnNovo.TabIndex = 0;
@@ -70,7 +71,7 @@
             // 
             this.cmbCarros.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cmbCarros.FormattingEnabled = true;
-            this.cmbCarros.Location = new System.Drawing.Point(200, 180);
+            this.cmbCarros.Location = new System.Drawing.Point(119, 162);
             this.cmbCarros.Name = "cmbCarros";
             this.cmbCarros.Size = new System.Drawing.Size(310, 33);
             this.cmbCarros.TabIndex = 1;
@@ -81,7 +82,7 @@
             // 
             this.lblValorCarro.AutoSize = true;
             this.lblValorCarro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorCarro.Location = new System.Drawing.Point(1088, 90);
+            this.lblValorCarro.Location = new System.Drawing.Point(1007, 72);
             this.lblValorCarro.Name = "lblValorCarro";
             this.lblValorCarro.Size = new System.Drawing.Size(215, 25);
             this.lblValorCarro.TabIndex = 2;
@@ -90,9 +91,9 @@
             // dgvPedido
             // 
             this.dgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPedido.Location = new System.Drawing.Point(761, 436);
+            this.dgvPedido.Location = new System.Drawing.Point(778, 401);
             this.dgvPedido.Name = "dgvPedido";
-            this.dgvPedido.Size = new System.Drawing.Size(616, 174);
+            this.dgvPedido.Size = new System.Drawing.Size(677, 214);
             this.dgvPedido.TabIndex = 3;
             this.dgvPedido.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
@@ -105,7 +106,7 @@
             this.grpOpicionais.Controls.Add(this.chkSensor);
             this.grpOpicionais.Controls.Add(this.chkCamera);
             this.grpOpicionais.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpOpicionais.Location = new System.Drawing.Point(200, 398);
+            this.grpOpicionais.Location = new System.Drawing.Point(119, 380);
             this.grpOpicionais.Name = "grpOpicionais";
             this.grpOpicionais.Size = new System.Drawing.Size(422, 237);
             this.grpOpicionais.TabIndex = 4;
@@ -182,7 +183,7 @@
             // txtValorCarro
             // 
             this.txtValorCarro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorCarro.Location = new System.Drawing.Point(1052, 118);
+            this.txtValorCarro.Location = new System.Drawing.Point(971, 100);
             this.txtValorCarro.Name = "txtValorCarro";
             this.txtValorCarro.Size = new System.Drawing.Size(284, 31);
             this.txtValorCarro.TabIndex = 5;
@@ -190,7 +191,7 @@
             // btnSalvar
             // 
             this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(934, 639);
+            this.btnSalvar.Location = new System.Drawing.Point(853, 621);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(108, 46);
             this.btnSalvar.TabIndex = 6;
@@ -201,7 +202,7 @@
             // btnCalcular
             // 
             this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(775, 639);
+            this.btnCalcular.Location = new System.Drawing.Point(694, 621);
             this.btnCalcular.Name = "btnCalcular";
             this.btnCalcular.Size = new System.Drawing.Size(116, 46);
             this.btnCalcular.TabIndex = 7;
@@ -212,7 +213,7 @@
             // btnSair
             // 
             this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(1227, 639);
+            this.btnSair.Location = new System.Drawing.Point(1146, 621);
             this.btnSair.Name = "btnSair";
             this.btnSair.Size = new System.Drawing.Size(109, 46);
             this.btnSair.TabIndex = 8;
@@ -224,7 +225,7 @@
             // 
             this.lblValorPagar.AutoSize = true;
             this.lblValorPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorPagar.Location = new System.Drawing.Point(1097, 230);
+            this.lblValorPagar.Location = new System.Drawing.Point(1016, 212);
             this.lblValorPagar.Name = "lblValorPagar";
             this.lblValorPagar.Size = new System.Drawing.Size(195, 25);
             this.lblValorPagar.TabIndex = 9;
@@ -234,7 +235,7 @@
             // 
             this.lblValorOpicionais.AutoSize = true;
             this.lblValorOpicionais.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorOpicionais.Location = new System.Drawing.Point(1047, 164);
+            this.lblValorOpicionais.Location = new System.Drawing.Point(966, 146);
             this.lblValorOpicionais.Name = "lblValorOpicionais";
             this.lblValorOpicionais.Size = new System.Drawing.Size(297, 25);
             this.lblValorOpicionais.TabIndex = 10;
@@ -244,7 +245,7 @@
             // 
             this.lblCodigo.AutoSize = true;
             this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(793, 341);
+            this.lblCodigo.Location = new System.Drawing.Point(823, 328);
             this.lblCodigo.Name = "lblCodigo";
             this.lblCodigo.Size = new System.Drawing.Size(86, 25);
             this.lblCodigo.TabIndex = 11;
@@ -253,7 +254,7 @@
             // txtValorAcessorios
             // 
             this.txtValorAcessorios.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorAcessorios.Location = new System.Drawing.Point(1052, 192);
+            this.txtValorAcessorios.Location = new System.Drawing.Point(971, 174);
             this.txtValorAcessorios.Name = "txtValorAcessorios";
             this.txtValorAcessorios.Size = new System.Drawing.Size(284, 31);
             this.txtValorAcessorios.TabIndex = 12;
@@ -261,7 +262,7 @@
             // txtCodigo
             // 
             this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(884, 341);
+            this.txtCodigo.Location = new System.Drawing.Point(914, 328);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
             this.txtCodigo.Size = new System.Drawing.Size(117, 31);
@@ -270,7 +271,7 @@
             // txtPesquisar
             // 
             this.txtPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisar.Location = new System.Drawing.Point(1147, 341);
+            this.txtPesquisar.Location = new System.Drawing.Point(1177, 328);
             this.txtPesquisar.Name = "txtPesquisar";
             this.txtPesquisar.Size = new System.Drawing.Size(156, 31);
             this.txtPesquisar.TabIndex = 15;
@@ -280,7 +281,7 @@
             // 
             this.lblPesquisar.AutoSize = true;
             this.lblPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPesquisar.Location = new System.Drawing.Point(1024, 344);
+            this.lblPesquisar.Location = new System.Drawing.Point(1054, 331);
             this.lblPesquisar.Name = "lblPesquisar";
             this.lblPesquisar.Size = new System.Drawing.Size(117, 25);
             this.lblPesquisar.TabIndex = 16;
@@ -289,7 +290,7 @@
             // txt
             // 
             this.txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt.Location = new System.Drawing.Point(1052, 261);
+            this.txt.Location = new System.Drawing.Point(971, 243);
             this.txt.Name = "txt";
             this.txt.Size = new System.Drawing.Size(284, 31);
             this.txt.TabIndex = 13;
@@ -316,6 +317,7 @@
             this.Controls.Add(this.lblValorCarro);
             this.Controls.Add(this.cmbCarros);
             this.Controls.Add(this.btnNovo);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Pedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedido";

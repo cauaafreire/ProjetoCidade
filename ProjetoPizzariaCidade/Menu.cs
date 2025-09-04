@@ -28,5 +28,10 @@ namespace ProjetoPizzariaCidade
         {
 
         }
+
+        private void verMaisToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
