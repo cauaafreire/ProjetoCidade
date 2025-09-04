@@ -31,7 +31,7 @@
             this.btnNovo = new System.Windows.Forms.Button();
             this.cmbCarros = new System.Windows.Forms.ComboBox();
             this.lblValorCarro = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dgvPedido = new System.Windows.Forms.DataGridView();
             this.grpOpicionais = new System.Windows.Forms.GroupBox();
             this.chkCamera = new System.Windows.Forms.CheckBox();
             this.txtValorCarro = new System.Windows.Forms.TextBox();
@@ -43,7 +43,7 @@
             this.lblCodigo = new System.Windows.Forms.Label();
             this.txtValorAcessorios = new System.Windows.Forms.TextBox();
             this.txtValorPagar = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.txtPesquisar = new System.Windows.Forms.TextBox();
             this.chkSensor = new System.Windows.Forms.CheckBox();
             this.chkCarregador = new System.Windows.Forms.CheckBox();
@@ -51,7 +51,7 @@
             this.chkPortaMalas = new System.Windows.Forms.CheckBox();
             this.chkCapa = new System.Windows.Forms.CheckBox();
             this.lblPesquisar = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).BeginInit();
             this.grpOpicionais.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,13 +85,14 @@
             this.lblValorCarro.TabIndex = 2;
             this.lblValorCarro.Text = "VALOR DO CARRO";
             // 
-            // dataGridView1
+            // dgvPedido
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(582, 296);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(616, 174);
-            this.dataGridView1.TabIndex = 3;
+            this.dgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPedido.Location = new System.Drawing.Point(582, 296);
+            this.dgvPedido.Name = "dgvPedido";
+            this.dgvPedido.Size = new System.Drawing.Size(616, 174);
+            this.dgvPedido.TabIndex = 3;
+            this.dgvPedido.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
             // grpOpicionais
             // 
@@ -197,13 +198,13 @@
             this.txtValorPagar.Size = new System.Drawing.Size(117, 20);
             this.txtValorPagar.TabIndex = 13;
             // 
-            // textBox4
+            // txtCodigo
             // 
-            this.textBox4.Location = new System.Drawing.Point(710, 236);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(117, 20);
-            this.textBox4.TabIndex = 14;
+            this.txtCodigo.Location = new System.Drawing.Point(710, 236);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.ReadOnly = true;
+            this.txtCodigo.Size = new System.Drawing.Size(117, 20);
+            this.txtCodigo.TabIndex = 14;
             // 
             // txtPesquisar
             // 
@@ -283,7 +284,7 @@
             this.ClientSize = new System.Drawing.Size(1327, 600);
             this.Controls.Add(this.lblPesquisar);
             this.Controls.Add(this.txtPesquisar);
-            this.Controls.Add(this.textBox4);
+            this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.txtValorPagar);
             this.Controls.Add(this.txtValorAcessorios);
             this.Controls.Add(this.lblCodigo);
@@ -294,14 +295,14 @@
             this.Controls.Add(this.btnSalvar);
             this.Controls.Add(this.txtValorCarro);
             this.Controls.Add(this.grpOpicionais);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.dgvPedido);
             this.Controls.Add(this.lblValorCarro);
             this.Controls.Add(this.cmbCarros);
             this.Controls.Add(this.btnNovo);
             this.Name = "Pedido";
             this.Text = "Pedido";
             this.Load += new System.EventHandler(this.Pedido_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).EndInit();
             this.grpOpicionais.ResumeLayout(false);
             this.grpOpicionais.PerformLayout();
             this.ResumeLayout(false);
@@ -314,7 +315,7 @@
         private System.Windows.Forms.Button btnNovo;
         private System.Windows.Forms.ComboBox cmbCarros;
         private System.Windows.Forms.Label lblValorCarro;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dgvPedido;
         private System.Windows.Forms.GroupBox grpOpicionais;
         private System.Windows.Forms.CheckBox chkCamera;
         private System.Windows.Forms.TextBox txtValorCarro;
@@ -326,7 +327,7 @@
         private System.Windows.Forms.Label lblCodigo;
         private System.Windows.Forms.TextBox txtValorAcessorios;
         private System.Windows.Forms.TextBox txtValorPagar;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.TextBox txtPesquisar;
         private System.Windows.Forms.CheckBox chkTapete;
         private System.Windows.Forms.CheckBox chkCarregador;

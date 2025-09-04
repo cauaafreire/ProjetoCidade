@@ -92,7 +92,7 @@ namespace ProjetoPizzariaCidade
             {
                 valorAcessorios = valorAcessorios + 89.90;
             }
-            if(chkSensor.Checked == true)
+            if (chkSensor.Checked == true)
             {
                 valorAcessorios = valorAcessorios + 45.00;
             }
@@ -100,7 +100,7 @@ namespace ProjetoPizzariaCidade
             {
                 valorAcessorios = valorAcessorios + 16.86;
             }
-            if(chkTapete.Checked == true)
+            if (chkTapete.Checked == true)
             {
                 valorAcessorios = valorAcessorios + 113.40;
             }
@@ -112,7 +112,7 @@ namespace ProjetoPizzariaCidade
             {
                 valorAcessorios = valorAcessorios + 41.78;
             }
-            else { 
+            else {
             }
             valorTotal = valorCarro + valorAcessorios;
             txtValorCarro.Text = Convert.ToString(valorCarro);
@@ -211,8 +211,30 @@ namespace ProjetoPizzariaCidade
             }
             else
             {
-                
+
             }
         }
+
+        private void dataGridView1_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            CarregarPedidos();
+
+        }
+
+        //Metodo que vai carregar informaçoes no data grid
+        public void CarregarPedidos()
+        {
+            try
+            {
+                txtCodigo.Text = dgvPedido.SelectedRows[0].Cells[0].Value.ToString();
+                cmbCarros.Text = dgvPedido.SelectedRows[0].Cells[1].Value.ToString();
+                txtValorCarro.Text = dgvPedido.SelectedRows[0].Cells[2].Value.ToString();
+                txtValorAcessorios.Text = dgvPedido.SelectedRows[0].Cells[3].Value.ToString();
+                txtValorPagar.Text = dgvPedido.SelectedRows[0].Cells[4].Value.ToString();   
+            }
+            catch (Exception erro) 
+            {
+                MessageBox.Show("Erro ao clicar" + erro);
+            }
     }
 }
