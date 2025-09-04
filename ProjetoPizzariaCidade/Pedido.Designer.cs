@@ -57,12 +57,13 @@
             // 
             // btnNovo
             // 
-            this.btnNovo.Location = new System.Drawing.Point(918, 490);
+            this.btnNovo.Location = new System.Drawing.Point(912, 490);
             this.btnNovo.Name = "btnNovo";
             this.btnNovo.Size = new System.Drawing.Size(100, 46);
             this.btnNovo.TabIndex = 0;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
+            this.btnNovo.Click += new System.EventHandler(this.btnNovo_Click);
             // 
             // cmbCarros
             // 
@@ -127,12 +128,13 @@
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Location = new System.Drawing.Point(766, 490);
+            this.btnSalvar.Location = new System.Drawing.Point(768, 490);
             this.btnSalvar.Name = "btnSalvar";
             this.btnSalvar.Size = new System.Drawing.Size(100, 46);
             this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.btnSalvar_Click);
             // 
             // btnCalcular
             // 

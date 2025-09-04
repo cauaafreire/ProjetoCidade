@@ -5,6 +5,8 @@ namespace ProjetoPizzariaCidade
 {
     public partial class Pedido : Form
     {
+        //INSTANCIANDO A CLASSE DE CONEXAO
+        Conexao con = new Conexao();
         public Pedido()
         {
             InitializeComponent();
@@ -119,6 +121,47 @@ namespace ProjetoPizzariaCidade
 
         private void grpOpicionais_Enter(object sender, EventArgs e)
         {
+            cmbCarros.SelectedIndex = -1;
+            txtValorCarro.Clear();
+            txtValorAcessorios.Clear();
+            chkCamera.Checked = false;
+            chkTapete.Checked = false;
+            chkCapa.Checked = false;
+            chkCarregador.Checked = false;
+            chkPortaMalas.Checked = false;
+            chkSensor.Checked = false;
+        }
+
+        private void btnNovo_Click(object sender, EventArgs e)
+        {
+            cmbCarros.SelectedIndex = 0;
+
+            txtValorCarro.Clear();
+            txtValorAcessorios.Clear();
+            txtValorPagar.Clear();
+
+            txtPesquisar.Clear();
+
+            chkCamera.Checked = false;
+            chkTapete.Checked = false;
+            chkCapa.Checked = false;
+            chkCarregador.Checked = false;
+            chkPortaMalas.Checked = false;
+            chkSensor.Checked = false;
+        }
+
+        private void btnSalvar_Click(object sender, EventArgs e)
+        {
+            //verifica os campos 
+            if (txtValorCarro.Text == "")
+            {
+                MessageBox.Show("Campo Obrigatorio");
+                txtValorCarro.Focus();
+            }
+            else if (txtValorAcessorios == "") 
+            {  
+
+            }
         }
     }
 }
