@@ -74,6 +74,7 @@
             this.cmbCarros.Size = new System.Drawing.Size(310, 24);
             this.cmbCarros.TabIndex = 1;
             this.cmbCarros.Text = "TIPO DE CARRO";
+            this.cmbCarros.SelectedIndexChanged += new System.EventHandler(this.cmbCarros_SelectedIndexChanged);
             // 
             // lblValorCarro
             // 

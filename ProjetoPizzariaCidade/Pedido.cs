@@ -189,6 +189,30 @@ namespace ProjetoPizzariaCidade
                 con.DesConnectarBD();
 
             }
+
+        }
+
+        private void cmbCarros_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cmbCarros.SelectedIndex == 0)
+            {
+                MessageBox.Show("Campo invalido");
+                cmbCarros.SelectedIndex = -1;
+            }
+            else if (cmbCarros.SelectedIndex == 4)
+            {
+                MessageBox.Show("Campo invalido");
+                cmbCarros.SelectedIndex = -1;
+            }
+            else if (cmbCarros.SelectedIndex == 9)
+            {
+                MessageBox.Show("Campo invalido");
+                cmbCarros.SelectedIndex = -1;
+            }
+            else
+            {
+                
+            }
         }
     }
 }
