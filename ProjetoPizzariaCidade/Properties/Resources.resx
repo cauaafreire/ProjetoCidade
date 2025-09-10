@@ -118,14 +118,14 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="ChatGPT Image 10 de set. de 2025, 16_23_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ChatGPT Image 10 de set. de 2025, 16_23_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="ChatGPT Image 10 de set. de 2025, 16_23_03 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\ChatGPT Image 10 de set. de 2025, 16_23_03 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Toyota-Corolla-GLi-2025-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Toyota-Corolla-GLi-2025-10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ChatGPT Image 10 de set. de 2025, 16_42_16 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChatGPT Image 10 de set. de 2025, 16_42_16 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Novo-Citroen-Basalt-First-Edition-2025-3" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Novo-Citroen-Basalt-First-Edition-2025-3.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="ChatGPT Image 10 de set. de 2025, 16_42_16" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChatGPT Image 10 de set. de 2025, 16_42_16.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -133,10 +133,40 @@
   <data name="ChatGPT Image 10 de set. de 2025, 16_23_03 (2)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\ChatGPT Image 10 de set. de 2025, 16_23_03 (2).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="renault-kardian" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\renault-kardian.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="chevroletcruze" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chevroletcruze.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mx5mazda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mx5mazda.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="volkswagen-tera_8-t8foeab1nasi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\volkswagen-tera_8-t8foeab1nasi.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bmw-m240i" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bmw-m240i.jpeg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Toyota-Corolla-GLi-2025-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Toyota-Corolla-GLi-2025-10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="ChatGPT Image 10 de set. de 2025, 16_23_03" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChatGPT Image 10 de set. de 2025, 16_23_03.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="mustang" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\mustang.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="honda-civic-sport-typeR" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\honda-civic-sport-typeR.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Fiat-Pulse-Impetus-T200-Hybrid-2025-10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Fiat-Pulse-Impetus-T200-Hybrid-2025-10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ChatGPT Image 10 de set. de 2025, 16_23_03 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\ChatGPT Image 10 de set. de 2025, 16_23_03 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Volkswagen-Jetta-GLi-TSi-2019-a-venda-em-salvador-bahia-motors-a-venda" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Volkswagen-Jetta-GLi-TSi-2019-a-venda-em-salvador-bahia-motors-a-venda.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="subaru" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\subaru.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

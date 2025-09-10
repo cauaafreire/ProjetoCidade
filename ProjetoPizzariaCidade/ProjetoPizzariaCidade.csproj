@@ -173,5 +173,35 @@
   <ItemGroup>
     <None Include="Resources\Toyota-Corolla-GLi-2025-10.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\honda-civic-sport-typeR.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chevroletcruze.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Volkswagen-Jetta-GLi-TSi-2019-a-venda-em-salvador-bahia-motors-a-venda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Fiat-Pulse-Impetus-T200-Hybrid-2025-10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Novo-Citroen-Basalt-First-Edition-2025-3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\volkswagen-tera_8-t8foeab1nasi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\renault-kardian.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mx5mazda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mustang.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subaru.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

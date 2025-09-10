@@ -52,8 +52,8 @@ namespace ProjetoPizzariaCidade
             DialogResult sair = MessageBox.Show("deseja sair?", "sair ", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (sair == DialogResult.No)
             {
-                Pedido ped = new Pedido();
-                ped.Show();
+                Menu menu = new Menu();
+                menu.Show();
                 this.Hide();
             }
             else

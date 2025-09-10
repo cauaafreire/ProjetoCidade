@@ -123,9 +123,109 @@ namespace ProjetoPizzariaCidade.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chevroletcruze {
+            get {
+                object obj = ResourceManager.GetObject("chevroletcruze", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Fiat_Pulse_Impetus_T200_Hybrid_2025_10 {
+            get {
+                object obj = ResourceManager.GetObject("Fiat-Pulse-Impetus-T200-Hybrid-2025-10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap honda_civic_sport_typeR {
+            get {
+                object obj = ResourceManager.GetObject("honda-civic-sport-typeR", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mustang {
+            get {
+                object obj = ResourceManager.GetObject("mustang", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap mx5mazda {
+            get {
+                object obj = ResourceManager.GetObject("mx5mazda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Novo_Citroen_Basalt_First_Edition_2025_3 {
+            get {
+                object obj = ResourceManager.GetObject("Novo-Citroen-Basalt-First-Edition-2025-3", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap renault_kardian {
+            get {
+                object obj = ResourceManager.GetObject("renault-kardian", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap subaru {
+            get {
+                object obj = ResourceManager.GetObject("subaru", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Toyota_Corolla_GLi_2025_10 {
             get {
                 object obj = ResourceManager.GetObject("Toyota-Corolla-GLi-2025-10", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Volkswagen_Jetta_GLi_TSi_2019_a_venda_em_salvador_bahia_motors_a_venda {
+            get {
+                object obj = ResourceManager.GetObject("Volkswagen-Jetta-GLi-TSi-2019-a-venda-em-salvador-bahia-motors-a-venda", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap volkswagen_tera_8_t8foeab1nasi {
+            get {
+                object obj = ResourceManager.GetObject("volkswagen-tera_8-t8foeab1nasi", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
