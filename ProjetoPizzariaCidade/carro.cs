@@ -53,5 +53,10 @@ namespace ProjetoPizzariaCidade
                 this.Hide();
             }
         }
+
+        private void carro_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

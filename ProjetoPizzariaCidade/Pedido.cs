@@ -136,7 +136,7 @@ namespace ProjetoPizzariaCidade
 
         private void btnNovo_Click(object sender, EventArgs e)
         {
-            cmbCarros.SelectedIndex = 0;
+            cmbCarros.SelectedIndex = -1;
 
             txtValorCarro.Clear();
             txtValorAcessorios.Clear();
@@ -200,12 +200,12 @@ namespace ProjetoPizzariaCidade
                 MessageBox.Show("Campo invalido");
                 cmbCarros.SelectedIndex = -1;
             }
-            else if (cmbCarros.SelectedIndex == 4)
+            else if (cmbCarros.SelectedIndex == 5)
             {
                 MessageBox.Show("Campo invalido");
                 cmbCarros.SelectedIndex = -1;
             }
-            else if (cmbCarros.SelectedIndex == 9)
+            else if (cmbCarros.SelectedIndex == 10)
             {
                 MessageBox.Show("Campo invalido");
                 cmbCarros.SelectedIndex = -1;
