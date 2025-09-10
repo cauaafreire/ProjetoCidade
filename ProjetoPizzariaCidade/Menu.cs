@@ -24,14 +24,13 @@ namespace ProjetoPizzariaCidade
             this.Hide();
         }
 
-        private void visualizarCarrosToolStripMenuItem_Click(object sender, EventArgs e)
-        {
 
-        }
 
         private void verMaisToolStripMenuItem_Click(object sender, EventArgs e)
         {
-
+            carro car = new carro ();
+            car.Show(); 
+            this.Hide();
         }
     }
 }

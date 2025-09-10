@@ -58,10 +58,10 @@
             // 
             // btnNovo
             // 
-            this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNovo.Location = new System.Drawing.Point(997, 621);
+            this.btnNovo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNovo.Location = new System.Drawing.Point(851, 571);
             this.btnNovo.Name = "btnNovo";
-            this.btnNovo.Size = new System.Drawing.Size(106, 46);
+            this.btnNovo.Size = new System.Drawing.Size(85, 43);
             this.btnNovo.TabIndex = 0;
             this.btnNovo.Text = "Novo";
             this.btnNovo.UseVisualStyleBackColor = true;
@@ -69,11 +69,12 @@
             // 
             // cmbCarros
             // 
-            this.cmbCarros.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCarros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCarros.ForeColor = System.Drawing.Color.White;
             this.cmbCarros.FormattingEnabled = true;
-            this.cmbCarros.Location = new System.Drawing.Point(119, 162);
+            this.cmbCarros.Location = new System.Drawing.Point(26, 107);
             this.cmbCarros.Name = "cmbCarros";
-            this.cmbCarros.Size = new System.Drawing.Size(310, 33);
+            this.cmbCarros.Size = new System.Drawing.Size(349, 28);
             this.cmbCarros.TabIndex = 1;
             this.cmbCarros.Text = "TIPO DE CARRO";
             this.cmbCarros.SelectedIndexChanged += new System.EventHandler(this.cmbCarros_SelectedIndexChanged);
@@ -81,19 +82,20 @@
             // lblValorCarro
             // 
             this.lblValorCarro.AutoSize = true;
-            this.lblValorCarro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorCarro.Location = new System.Drawing.Point(1007, 72);
+            this.lblValorCarro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorCarro.ForeColor = System.Drawing.Color.White;
+            this.lblValorCarro.Location = new System.Drawing.Point(794, 38);
             this.lblValorCarro.Name = "lblValorCarro";
-            this.lblValorCarro.Size = new System.Drawing.Size(215, 25);
+            this.lblValorCarro.Size = new System.Drawing.Size(168, 20);
             this.lblValorCarro.TabIndex = 2;
             this.lblValorCarro.Text = "VALOR DO CARRO";
             // 
             // dgvPedido
             // 
             this.dgvPedido.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPedido.Location = new System.Drawing.Point(778, 401);
+            this.dgvPedido.Location = new System.Drawing.Point(539, 348);
             this.dgvPedido.Name = "dgvPedido";
-            this.dgvPedido.Size = new System.Drawing.Size(677, 214);
+            this.dgvPedido.Size = new System.Drawing.Size(604, 186);
             this.dgvPedido.TabIndex = 3;
             this.dgvPedido.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
@@ -105,10 +107,11 @@
             this.grpOpicionais.Controls.Add(this.chkCarregador);
             this.grpOpicionais.Controls.Add(this.chkSensor);
             this.grpOpicionais.Controls.Add(this.chkCamera);
-            this.grpOpicionais.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.grpOpicionais.Location = new System.Drawing.Point(119, 380);
+            this.grpOpicionais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grpOpicionais.ForeColor = System.Drawing.Color.White;
+            this.grpOpicionais.Location = new System.Drawing.Point(26, 325);
             this.grpOpicionais.Name = "grpOpicionais";
-            this.grpOpicionais.Size = new System.Drawing.Size(422, 237);
+            this.grpOpicionais.Size = new System.Drawing.Size(349, 209);
             this.grpOpicionais.TabIndex = 4;
             this.grpOpicionais.TabStop = false;
             this.grpOpicionais.Text = "ESCOLHA OS ACESSORIOS";
@@ -182,18 +185,19 @@
             // 
             // txtValorCarro
             // 
-            this.txtValorCarro.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorCarro.Location = new System.Drawing.Point(971, 100);
+            this.txtValorCarro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorCarro.ForeColor = System.Drawing.Color.White;
+            this.txtValorCarro.Location = new System.Drawing.Point(773, 70);
             this.txtValorCarro.Name = "txtValorCarro";
-            this.txtValorCarro.Size = new System.Drawing.Size(284, 31);
+            this.txtValorCarro.Size = new System.Drawing.Size(211, 26);
             this.txtValorCarro.TabIndex = 5;
             // 
             // btnSalvar
             // 
-            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSalvar.Location = new System.Drawing.Point(853, 621);
+            this.btnSalvar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSalvar.Location = new System.Drawing.Point(720, 571);
             this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(108, 46);
+            this.btnSalvar.Size = new System.Drawing.Size(87, 43);
             this.btnSalvar.TabIndex = 6;
             this.btnSalvar.Text = "Salvar";
             this.btnSalvar.UseVisualStyleBackColor = true;
@@ -201,10 +205,10 @@
             // 
             // btnCalcular
             // 
-            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(694, 621);
+            this.btnCalcular.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(575, 571);
             this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(116, 46);
+            this.btnCalcular.Size = new System.Drawing.Size(95, 43);
             this.btnCalcular.TabIndex = 7;
             this.btnCalcular.Text = "Calcular";
             this.btnCalcular.UseVisualStyleBackColor = true;
@@ -212,10 +216,10 @@
             // 
             // btnSair
             // 
-            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnSair.Location = new System.Drawing.Point(1146, 621);
+            this.btnSair.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSair.Location = new System.Drawing.Point(970, 571);
             this.btnSair.Name = "btnSair";
-            this.btnSair.Size = new System.Drawing.Size(109, 46);
+            this.btnSair.Size = new System.Drawing.Size(88, 43);
             this.btnSair.TabIndex = 8;
             this.btnSair.Text = "sair";
             this.btnSair.UseVisualStyleBackColor = true;
@@ -224,82 +228,92 @@
             // lblValorPagar
             // 
             this.lblValorPagar.AutoSize = true;
-            this.lblValorPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorPagar.Location = new System.Drawing.Point(1016, 212);
+            this.lblValorPagar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorPagar.ForeColor = System.Drawing.Color.White;
+            this.lblValorPagar.Location = new System.Drawing.Point(801, 180);
             this.lblValorPagar.Name = "lblValorPagar";
-            this.lblValorPagar.Size = new System.Drawing.Size(195, 25);
+            this.lblValorPagar.Size = new System.Drawing.Size(153, 20);
             this.lblValorPagar.TabIndex = 9;
             this.lblValorPagar.Text = "VALOR A PAGAR";
             // 
             // lblValorOpicionais
             // 
             this.lblValorOpicionais.AutoSize = true;
-            this.lblValorOpicionais.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblValorOpicionais.Location = new System.Drawing.Point(966, 146);
+            this.lblValorOpicionais.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblValorOpicionais.ForeColor = System.Drawing.Color.White;
+            this.lblValorOpicionais.Location = new System.Drawing.Point(760, 108);
             this.lblValorOpicionais.Name = "lblValorOpicionais";
-            this.lblValorOpicionais.Size = new System.Drawing.Size(297, 25);
+            this.lblValorOpicionais.Size = new System.Drawing.Size(234, 20);
             this.lblValorOpicionais.TabIndex = 10;
             this.lblValorOpicionais.Text = "VALOR DOS ACESSORIOS";
             // 
             // lblCodigo
             // 
             this.lblCodigo.AutoSize = true;
-            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCodigo.Location = new System.Drawing.Point(823, 328);
+            this.lblCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCodigo.ForeColor = System.Drawing.Color.White;
+            this.lblCodigo.Location = new System.Drawing.Point(676, 294);
             this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(86, 25);
+            this.lblCodigo.Size = new System.Drawing.Size(65, 20);
             this.lblCodigo.TabIndex = 11;
             this.lblCodigo.Text = "Codigo";
             // 
             // txtValorAcessorios
             // 
-            this.txtValorAcessorios.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtValorAcessorios.Location = new System.Drawing.Point(971, 174);
+            this.txtValorAcessorios.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtValorAcessorios.ForeColor = System.Drawing.Color.White;
+            this.txtValorAcessorios.Location = new System.Drawing.Point(773, 141);
             this.txtValorAcessorios.Name = "txtValorAcessorios";
-            this.txtValorAcessorios.Size = new System.Drawing.Size(284, 31);
+            this.txtValorAcessorios.Size = new System.Drawing.Size(211, 26);
             this.txtValorAcessorios.TabIndex = 12;
             // 
             // txtCodigo
             // 
-            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtCodigo.Location = new System.Drawing.Point(914, 328);
+            this.txtCodigo.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCodigo.ForeColor = System.Drawing.Color.White;
+            this.txtCodigo.Location = new System.Drawing.Point(773, 291);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.ReadOnly = true;
-            this.txtCodigo.Size = new System.Drawing.Size(117, 31);
+            this.txtCodigo.Size = new System.Drawing.Size(44, 26);
             this.txtCodigo.TabIndex = 14;
             // 
             // txtPesquisar
             // 
-            this.txtPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtPesquisar.Location = new System.Drawing.Point(1177, 328);
+            this.txtPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPesquisar.ForeColor = System.Drawing.Color.White;
+            this.txtPesquisar.Location = new System.Drawing.Point(1002, 291);
             this.txtPesquisar.Name = "txtPesquisar";
-            this.txtPesquisar.Size = new System.Drawing.Size(156, 31);
+            this.txtPesquisar.Size = new System.Drawing.Size(83, 26);
             this.txtPesquisar.TabIndex = 15;
             this.txtPesquisar.TextChanged += new System.EventHandler(this.txtPesquisar_TextChanged);
             // 
             // lblPesquisar
             // 
             this.lblPesquisar.AutoSize = true;
-            this.lblPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPesquisar.Location = new System.Drawing.Point(1054, 331);
+            this.lblPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPesquisar.ForeColor = System.Drawing.Color.White;
+            this.lblPesquisar.Location = new System.Drawing.Point(866, 294);
             this.lblPesquisar.Name = "lblPesquisar";
-            this.lblPesquisar.Size = new System.Drawing.Size(117, 25);
+            this.lblPesquisar.Size = new System.Drawing.Size(88, 20);
             this.lblPesquisar.TabIndex = 16;
             this.lblPesquisar.Text = "Pesquisar";
             // 
             // txt
             // 
-            this.txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt.Location = new System.Drawing.Point(971, 243);
+            this.txt.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt.ForeColor = System.Drawing.Color.White;
+            this.txt.Location = new System.Drawing.Point(773, 221);
             this.txt.Name = "txt";
-            this.txt.Size = new System.Drawing.Size(284, 31);
+            this.txt.Size = new System.Drawing.Size(211, 26);
             this.txt.TabIndex = 13;
             // 
             // Pedido
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1604, 795);
+            this.BackgroundImage = global::ProjetoPizzariaCidade.Properties.Resources.ChatGPT_Image_10_de_set__de_2025__16_23_03__2_;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.ClientSize = new System.Drawing.Size(1184, 711);
             this.Controls.Add(this.lblPesquisar);
             this.Controls.Add(this.txtPesquisar);
             this.Controls.Add(this.txtCodigo);
@@ -321,7 +335,6 @@
             this.Name = "Pedido";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pedido";
-            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Pedido_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvPedido)).EndInit();
             this.grpOpicionais.ResumeLayout(false);
