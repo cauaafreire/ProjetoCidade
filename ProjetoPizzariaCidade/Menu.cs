@@ -32,5 +32,34 @@ namespace ProjetoPizzariaCidade
             car.Show(); 
             this.Hide();
         }
+
+        private void btnFazerPedido_Click(object sender, EventArgs e)
+        {
+            Pedido ped = new Pedido();
+            ped.Show();
+            this.Hide();
+        }
+
+        private void btnVer_Click(object sender, EventArgs e)
+        {
+            carro car = new carro();
+            car.Show();
+            this.Hide();
+        }
+
+        private void btnSairMenu_Click(object sender, EventArgs e)
+        {
+            DialogResult sair = MessageBox.Show("deseja sair?", "sair ", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            if (sair == DialogResult.No)
+            {
+                Pedido ped = new Pedido();
+                ped.Show();
+                this.Hide();
+            }
+            else
+            {
+                Application.Exit();
+            }
+        }
     }
 }

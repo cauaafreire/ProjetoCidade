@@ -63,6 +63,16 @@ namespace ProjetoPizzariaCidade.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bmw_m240i {
+            get {
+                object obj = ResourceManager.GetObject("bmw-m240i", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ChatGPT_Image_10_de_set__de_2025__16_23_03 {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT Image 10 de set. de 2025, 16_23_03", resourceCulture);
@@ -106,6 +116,16 @@ namespace ProjetoPizzariaCidade.Properties {
         internal static System.Drawing.Bitmap ChatGPT_Image_10_de_set__de_2025__16_42_16__1_ {
             get {
                 object obj = ResourceManager.GetObject("ChatGPT Image 10 de set. de 2025, 16_42_16 (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Toyota_Corolla_GLi_2025_10 {
+            get {
+                object obj = ResourceManager.GetObject("Toyota-Corolla-GLi-2025-10", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -271,7 +271,7 @@ namespace ProjetoPizzariaCidade
 
         private void btnSair_Click(object sender, EventArgs e)
         {
-            DialogResult sair = MessageBox.Show("desseja sair?", "sair ", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+            DialogResult sair = MessageBox.Show("deseja sair?", "sair ", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
             if (sair == DialogResult.No)
             {
                 Pedido ped = new Pedido();

@@ -29,77 +29,43 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.fazerPedidoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.visualizarCarrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.verMaisToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.outrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.sairToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.menuStrip1.SuspendLayout();
+            this.btnSairMenu = new System.Windows.Forms.Button();
+            this.btnVer = new System.Windows.Forms.Button();
+            this.btnFazerPedido = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // menuStrip1
+            // btnSairMenu
             // 
-            this.menuStrip1.BackColor = System.Drawing.Color.MediumBlue;
-            this.menuStrip1.BackgroundImage = global::ProjetoPizzariaCidade.Properties.Resources.ChatGPT_Image_10_de_set__de_2025__16_23_03__2_;
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.visualizarCarrosToolStripMenuItem,
-            this.outrosToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1184, 24);
-            this.menuStrip1.TabIndex = 0;
-            this.menuStrip1.Text = "menuStrip1";
+            this.btnSairMenu.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSairMenu.Location = new System.Drawing.Point(759, 536);
+            this.btnSairMenu.Name = "btnSairMenu";
+            this.btnSairMenu.Size = new System.Drawing.Size(213, 72);
+            this.btnSairMenu.TabIndex = 3;
+            this.btnSairMenu.Text = "Sair";
+            this.btnSairMenu.UseVisualStyleBackColor = true;
+            this.btnSairMenu.Click += new System.EventHandler(this.btnSairMenu_Click);
             // 
-            // toolStripMenuItem1
+            // btnVer
             // 
-            this.toolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.fazerPedidoToolStripMenuItem});
-            this.toolStripMenuItem1.ForeColor = System.Drawing.Color.White;
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(66, 20);
-            this.toolStripMenuItem1.Text = "Comprar";
+            this.btnVer.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnVer.Location = new System.Drawing.Point(483, 536);
+            this.btnVer.Name = "btnVer";
+            this.btnVer.Size = new System.Drawing.Size(213, 72);
+            this.btnVer.TabIndex = 4;
+            this.btnVer.Text = "Ver carros";
+            this.btnVer.UseVisualStyleBackColor = true;
+            this.btnVer.Click += new System.EventHandler(this.btnVer_Click);
             // 
-            // fazerPedidoToolStripMenuItem
+            // btnFazerPedido
             // 
-            this.fazerPedidoToolStripMenuItem.Name = "fazerPedidoToolStripMenuItem";
-            this.fazerPedidoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.fazerPedidoToolStripMenuItem.Text = "Fazer pedido";
-            this.fazerPedidoToolStripMenuItem.Click += new System.EventHandler(this.fazerPedidoToolStripMenuItem_Click);
-            // 
-            // visualizarCarrosToolStripMenuItem
-            // 
-            this.visualizarCarrosToolStripMenuItem.BackColor = System.Drawing.Color.MediumBlue;
-            this.visualizarCarrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.verMaisToolStripMenuItem});
-            this.visualizarCarrosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.visualizarCarrosToolStripMenuItem.Name = "visualizarCarrosToolStripMenuItem";
-            this.visualizarCarrosToolStripMenuItem.Size = new System.Drawing.Size(103, 20);
-            this.visualizarCarrosToolStripMenuItem.Text = "Visualizar carros";
-            // 
-            // verMaisToolStripMenuItem
-            // 
-            this.verMaisToolStripMenuItem.Name = "verMaisToolStripMenuItem";
-            this.verMaisToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.verMaisToolStripMenuItem.Text = "Ver mais";
-            this.verMaisToolStripMenuItem.Click += new System.EventHandler(this.verMaisToolStripMenuItem_Click);
-            // 
-            // outrosToolStripMenuItem
-            // 
-            this.outrosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.sairToolStripMenuItem});
-            this.outrosToolStripMenuItem.ForeColor = System.Drawing.Color.White;
-            this.outrosToolStripMenuItem.Name = "outrosToolStripMenuItem";
-            this.outrosToolStripMenuItem.Size = new System.Drawing.Size(55, 20);
-            this.outrosToolStripMenuItem.Text = "Outros";
-            // 
-            // sairToolStripMenuItem
-            // 
-            this.sairToolStripMenuItem.Name = "sairToolStripMenuItem";
-            this.sairToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
-            this.sairToolStripMenuItem.Text = "Sair";
+            this.btnFazerPedido.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnFazerPedido.Location = new System.Drawing.Point(205, 536);
+            this.btnFazerPedido.Name = "btnFazerPedido";
+            this.btnFazerPedido.Size = new System.Drawing.Size(213, 72);
+            this.btnFazerPedido.TabIndex = 5;
+            this.btnFazerPedido.Text = "Fazer pedido";
+            this.btnFazerPedido.UseVisualStyleBackColor = true;
+            this.btnFazerPedido.Click += new System.EventHandler(this.btnFazerPedido_Click);
             // 
             // Menu
             // 
@@ -108,28 +74,20 @@
             this.BackColor = System.Drawing.Color.Navy;
             this.BackgroundImage = global::ProjetoPizzariaCidade.Properties.Resources.ChatGPT_Image_10_de_set__de_2025__16_23_03__2_;
             this.ClientSize = new System.Drawing.Size(1184, 711);
-            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.btnFazerPedido);
+            this.Controls.Add(this.btnVer);
+            this.Controls.Add(this.btnSairMenu);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.IsMdiContainer = true;
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
-            this.menuStrip1.ResumeLayout(false);
-            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.MenuStrip menuStrip1;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
-        private System.Windows.Forms.ToolStripMenuItem fazerPedidoToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem visualizarCarrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem verMaisToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem outrosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem sairToolStripMenuItem;
+        private System.Windows.Forms.Button btnSairMenu;
+        private System.Windows.Forms.Button btnVer;
+        private System.Windows.Forms.Button btnFazerPedido;
     }
 }
