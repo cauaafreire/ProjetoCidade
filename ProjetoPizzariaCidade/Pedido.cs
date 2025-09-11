@@ -38,51 +38,51 @@ namespace ProjetoPizzariaCidade
             //DECLARANDO AS VARIAVEIS 
             Double valorCarro = 0, valorAcessorios = 0, valorTotal = 0;
 
-            if (cmbCarros.SelectedIndex == 0)
+            if (cmbCarros.SelectedIndex == 1)
             {
                 valorCarro = 158490;
             }
-            else if (cmbCarros.SelectedIndex == 1)
+            else if (cmbCarros.SelectedIndex == 2)
             {
                 valorCarro = 140000;
             }
-            else if (cmbCarros.SelectedIndex == 2)
+            else if (cmbCarros.SelectedIndex == 3)
             {
                 valorCarro = 247290;
             }
-            else if (cmbCarros.SelectedIndex == 3)
+            else if (cmbCarros.SelectedIndex == 4)
             {
                 valorCarro = 429990;
             }
-            else if (cmbCarros.SelectedIndex == 4)
+            else if (cmbCarros.SelectedIndex == 6)
             {
                 valorCarro = 98990;
             }
-            else if (cmbCarros.SelectedIndex == 5)
+            else if (cmbCarros.SelectedIndex == 7)
             {
                 valorCarro = 101490;
             }
-            else if (cmbCarros.SelectedIndex == 6)
+            else if (cmbCarros.SelectedIndex == 8)
             {
                 valorCarro = 105890;
             }
-            else if (cmbCarros.SelectedIndex == 7)
+            else if (cmbCarros.SelectedIndex == 9)
             {
                 valorCarro = 112690;
             }
-            else if (cmbCarros.SelectedIndex == 8)
+            else if (cmbCarros.SelectedIndex == 11)
             {
                 valorCarro = 220000;
             }
-            else if (cmbCarros.SelectedIndex == 9)
+            else if (cmbCarros.SelectedIndex == 12)
             {
                 valorCarro = 390000;
             }
-            else if (cmbCarros.SelectedIndex == 10)
+            else if (cmbCarros.SelectedIndex == 13)
             {
                 valorCarro = 310000;
             }
-            else if (cmbCarros.SelectedIndex == 11)
+            else if (cmbCarros.SelectedIndex == 14)
             {
                 valorCarro = 250000;
             }
@@ -118,7 +118,7 @@ namespace ProjetoPizzariaCidade
             valorTotal = valorCarro + valorAcessorios;
             txtValorCarro.Text = Convert.ToString(valorCarro);
             txtValorAcessorios.Text = Convert.ToString(valorAcessorios);
-            txt.Text = Convert.ToString(valorTotal);
+            txtValorPagar.Text = Convert.ToString(valorTotal);
         }
 
         private void grpOpicionais_Enter(object sender, EventArgs e)
@@ -140,7 +140,7 @@ namespace ProjetoPizzariaCidade
 
             txtValorCarro.Clear();
             txtValorAcessorios.Clear();
-            txt.Clear();
+            txtValorPagar.Clear();
 
             txtPesquisar.Clear();
 
@@ -165,10 +165,10 @@ namespace ProjetoPizzariaCidade
                 MessageBox.Show("Campo Obrigatorio");
                 txtValorAcessorios.Focus();
             }
-            else if (txt.Text == "")
+            else if (txtValorPagar.Text == "")
             {
                 MessageBox.Show("Campo Obrigatorio");
-                txt.Focus();
+                txtValorPagar.Focus();
             }
             else
             {
@@ -177,15 +177,15 @@ namespace ProjetoPizzariaCidade
                 MySqlCommand cmd = new MySqlCommand(sql, con.ConnectarBD());
                 cmd.Parameters.Add("@carro", MySqlDbType.Text).Value = cmbCarros.Text;
                 cmd.Parameters.Add("@vcarro", MySqlDbType.Text).Value = txtValorCarro.Text;
-                cmd.Parameters.Add("@vacessorios", MySqlDbType.Text).Value = txtValorAcessorios;
-                cmd.Parameters.Add("@total", MySqlDbType.Text).Value = txt.Text;
+                cmd.Parameters.Add("@vacessorios", MySqlDbType.Text).Value = txtValorAcessorios.Text;
+                cmd.Parameters.Add("@total", MySqlDbType.Text).Value = txtValorPagar.Text;
                 cmd.ExecuteNonQuery();
 
                 MessageBox.Show("Dados cadstrados com sucesso");
                 cmbCarros.Text = "";
                 txtValorCarro.Text = "";
                 txtValorAcessorios.Text = "";
-                txt.Text = "";
+                txtValorPagar.Text = "";
                 cmbCarros.Focus();
                 con.DesConnectarBD();
 
@@ -231,7 +231,7 @@ namespace ProjetoPizzariaCidade
                 cmbCarros.Text = dgvPedido.SelectedRows[0].Cells[1].Value.ToString();
                 txtValorCarro.Text = dgvPedido.SelectedRows[0].Cells[2].Value.ToString();
                 txtValorAcessorios.Text = dgvPedido.SelectedRows[0].Cells[3].Value.ToString();
-                txt.Text = dgvPedido.SelectedRows[0].Cells[4].Value.ToString();
+                txtValorPagar.Text = dgvPedido.SelectedRows[0].Cells[4].Value.ToString();
             }
             catch (Exception erro)
             {

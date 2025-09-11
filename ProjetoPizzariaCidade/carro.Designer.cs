@@ -75,11 +75,11 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Lucida Sans Typewriter", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(591, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 33);
+            this.label1.Size = new System.Drawing.Size(86, 33);
             this.label1.TabIndex = 0;
             this.label1.Text = "Sedã";
             // 
@@ -87,7 +87,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Font = new System.Drawing.Font("Lucida Sans Typewriter", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(580, 221);
             this.label2.Name = "label2";
@@ -99,11 +99,11 @@
             // 
             this.lblEsportivo.AutoSize = true;
             this.lblEsportivo.BackColor = System.Drawing.Color.Transparent;
-            this.lblEsportivo.Font = new System.Drawing.Font("Lucida Sans Typewriter", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEsportivo.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEsportivo.ForeColor = System.Drawing.Color.White;
             this.lblEsportivo.Location = new System.Drawing.Point(538, 426);
             this.lblEsportivo.Name = "lblEsportivo";
-            this.lblEsportivo.Size = new System.Drawing.Size(185, 33);
+            this.lblEsportivo.Size = new System.Drawing.Size(162, 33);
             this.lblEsportivo.TabIndex = 2;
             this.lblEsportivo.Text = "Esportivos";
             // 
@@ -430,6 +430,7 @@
             this.Controls.Add(this.lblEsportivo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "carro";
             this.ShowIcon = false;
             this.ShowInTaskbar = false;
